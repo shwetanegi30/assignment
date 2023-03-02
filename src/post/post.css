@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500&display=swap');
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.row {
+    display: contents;
+}
+
+.card {
+    margin: 22px auto;
+    background-color: beige;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    height: 96%;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.user-id {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 23px;
+    padding-top: 25px;
+    color: white;
+    opacity: 70%;
+}
+
+.title {
+    color: white;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.body {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 10px;
+    color: white;
+}
+
+.tags,
+.reaction {
+    text-align: right;
+    padding-right: 29px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    opacity: 70%;
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        margin: 0 30px;
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+}
